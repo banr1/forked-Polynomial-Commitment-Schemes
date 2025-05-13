@@ -17,7 +17,7 @@ We formalize an abstract polynomial commitment scheme and corresponding security
 
 We define five abstract games against an adversary, covering correctness, the standard security properties for polynomial commitment schemes and desirable properties for SNARK construction:
 -  __Correctness__
-      Honest verifier and honest committer interaction. Formally, a Probability Massfuntion (PMF) over the probability of acceptance by the verifier.
+      Honest verifier and honest committer interaction. Formally, a Probability Mass Function (PMF) over the probability of acceptance by the verifier.
 - __Polynomial Binding__
       The adversary outputs one commitment to two distinct polynomials $\phi$ and $\phi'$ with according witnesses. The result is a PMF capturing the event that the verifier accepts both polynomials for the commitment. 
 - __Evaluation Binding__
@@ -32,11 +32,5 @@ We define five abstract games against an adversary, covering correctness, the st
 ## Formal Verification of the KZG
 The non-hiding DL-version of the KZG described in [KZG10]. We formally verify __correctness__, __polynomial binding__, __evaluation binding__, __knowledge soundness__, and a weaker version of hiding, __weak hiding__, that is only hiding for uniform random polynomials. 
 
-## Formal Verifrication of a batched KZG
+## Formal Verification of a batched KZG
 The batched version is an extension of the KZG for two more functions, which allow to evaluate a degree $d$ polynomial at up to $d$ points with one witness and one pairing check. We formally verify __correctness__, __polynomial binding__, __evaluation binding__, and __knowledge soundness__.
-
-
-
-
-
-
